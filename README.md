@@ -1,9 +1,12 @@
 # TransMix
-TransMix: Transformer-based Value Function Decomposition for Cooperative Multi-agent Reinforcement Learning \
-Code coming soon \
-Game Replay coming soon
+TransMix: Transformer-based Value Function Decomposition for Cooperative Multi-agent Reinforcement Learning
 
-# Citation
+# Replays
+> 8m_vs_9m 
+
+https://user-images.githubusercontent.com/45826429/195468265-58678a3b-4945-4302-8729-fdca06227318.mp4
+
+# Citing TranxMix
 
 Please cite the paper as (in BibTex format):
 ```
