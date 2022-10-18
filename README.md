@@ -56,6 +56,17 @@ You can save the learnt models to disk by setting `save_model = True`, which is 
 
 Learnt models can be loaded using the `checkpoint_path` parameter, after which the learning will proceed from the corresponding timestep. 
 
+### TranxMix specific parameters
+
+TransMix specific parameters can be found in *src/config/algs -> tmix.yml*
+
+We use the parallel runner environment from PyMARL to speedup the training. Other parameters are:
+- `is_noise`: to make the the global states noisy. 
+- `embed_dim`: is the dim used for transformation in the transformer
+- `ff`: is the feed forward dim for the transformer
+- `t_depth`: represents the number of transformer encoder layers
+- `heads`: shows the number of multi-heads inside the transformer encoder
+
 ## Watching StarCraft II replays
 
 `save_replay` option allows saving replays of models which are loaded using `checkpoint_path`. Once the model is successfully loaded, `test_nepisode` number of episodes are run on the test mode and a .SC2Replay file is saved in the Replay directory of StarCraft II. Please make sure to use the episode runner if you wish to save a replay, i.e., `runner=episode`. The name of the saved replay file starts with the given `env_args.save_replay_prefix` (map_name if empty), followed by the current timestamp. 
