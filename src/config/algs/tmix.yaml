@@ -1,0 +1,35 @@
+# --- QMIX specific parameters ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 500000 #900000 #80000 #50000 #60000 
+
+#runner: "episode"
+runner: "parallel"
+
+buffer_size: 5000
+
+# update the target network every {} episodes
+target_update_interval: 200
+
+# learning rate
+lr_reduce_interval: 100000
+lr_step: 0.6
+
+# use the Q_Learner to train
+agent_output_type: "q"
+learner: "q_learner"
+double_q: True
+vs_enabled: True
+
+mixer: "tmix"
+embed_dim: 512
+out_channels: 512
+t_dim: 512
+ff: 2048
+heads: 4
+t_depth: 1
+is_noise: False
+name: "tmix"
