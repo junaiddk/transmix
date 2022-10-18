@@ -80,11 +80,21 @@ python -m pysc2.bin.play --norender --rgb_minimap_size 0 --replay NAME.SC2Replay
 **Note:** Replays cannot be watched using the Linux version of StarCraft II. Please use either the Mac or Windows version of the StarCraft II client.
 
 # Replays
-Here is an example replay/result of the trained agents on one of the hard scenarios of SMAC
+Here are some example replays/results of the trained agents on one of the hard scenarios of SMAC:
 
 > 8m_vs_9m 
 
 https://user-images.githubusercontent.com/45826429/195468265-58678a3b-4945-4302-8729-fdca06227318.mp4
+
+> MMM
+
+https://user-images.githubusercontent.com/45826429/196526347-d368488b-ae18-4cc3-94f0-6241c1192992.mp4
+
+> 2c_vs_64zg
+
+https://user-images.githubusercontent.com/45826429/196527347-1dbbf7c1-58dc-48ff-9299-b3b0667fdf2e.mp4
+
+
 
 # Citing TranxMix
 
